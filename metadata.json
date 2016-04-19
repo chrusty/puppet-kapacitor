@@ -1,0 +1,24 @@
+{
+  "name": "puppet-kapacitor",
+  "version": "1.0.0",
+  "author": "Chrusty",
+  "summary": "Puppet module for Kapacitor",
+  "license": "Apache-2.0",
+  "source": "https://github.com/chrusty/puppet-kapacitor",
+  "project_page": "https://github.com/chrusty/puppet-kapacitor",
+  "issues_url": "https://github.com/chrusty/puppet-kapacitor/issues",
+  "dependencies": [],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    }
+  ],
+  "requirements": [],
+  "tags": [
+    "kapacitor",
+  ]
+}
