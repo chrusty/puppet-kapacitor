@@ -1,8 +1,8 @@
-# == Define: kapacitor::task::stream
+# == Define: kapacitor::task::define
 #
-# Defines a streaming task from a tick-script:
+# Defines a task from a tick-script:
 #
-define kapacitor::task::stream(
+define kapacitor::task::define(
   $enabled          = true,
   $influx_database  = 'telegraf',
   $influx_retention = 'default',
