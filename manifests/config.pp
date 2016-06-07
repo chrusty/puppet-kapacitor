@@ -29,6 +29,7 @@ class kapacitor::config(
   $config_slack_channel              = $::kapacitor::config_slack_channel,
   $config_slack_global               = $::kapacitor::config_slack_global,
   $config_slack_state_changes_only   = $::kapacitor::config_slack_state_changes_only,
+  $config_storage_boltdb             = $::kapacitor::config_storage_boltdb,
   $config_hipchat_enabled            = $::kapacitor::config_hipchat_enabled,
   $config_hipchat_url                = $::kapacitor::config_hipchat_url,
   $config_hipchat_room               = $::kapacitor::config_hipchat_room,

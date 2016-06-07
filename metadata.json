@@ -1,6 +1,6 @@
 {
   "name": "puppet-kapacitor",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Chrusty",
   "summary": "Puppet module for Kapacitor",
   "license": "Apache-2.0",

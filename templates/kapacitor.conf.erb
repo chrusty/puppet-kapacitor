@@ -32,9 +32,16 @@ data_dir = "<%= @config_data_dir %>"
 
 [task]
   # Where to store the tasks database
+  # DEPRECATED: This option is not needed for new installations.
+  # It is only used to determine the location of the task.db file
+  # for migrating to the new `storage` service.
   dir = "<%= @config_tasks_dir %>"
   # How often to snapshot running task state.
   snapshot-interval = "60s"
+
+[storage]
+  # Where to store the Kapacitor boltdb database
+  boltdb = "<%= @config_storage_boltdb %>"
 
 [deadman]
   # Configure a deadman's switch

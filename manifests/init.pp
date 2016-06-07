@@ -33,6 +33,7 @@ class kapacitor (
   $config_slack_channel              = '',
   $config_slack_global               = false,
   $config_slack_state_changes_only   = false,
+  $config_storage_boltdb             = '/var/lib/kapacitor/kapacitor.db',
   $config_hipchat_enabled            = false,
   $config_hipchat_url                = 'https://something.hipchat.com/v2/room',
   $config_hipchat_room               = 'Name of room',
