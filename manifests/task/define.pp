@@ -38,7 +38,7 @@ define kapacitor::task::define(
 
     # Define the task:
     exec { "kapacitor-task-define-${name}":
-      command     => "/usr/bin/kapacitor define -name=${name} -type=${task_type} -tick=${tick_file} -dbrp=${influx_database}.${influx_retention}",
+      command     => "/usr/bin/kapacitor define ${name} -type=${task_type} -tick=${tick_file} -dbrp=${influx_database}.${influx_retention}",
       refreshonly => true,
       notify      => Exec["kapacitor-task-enable-${name}"]
     }

@@ -291,11 +291,16 @@ data_dir = "<%= @config_data_dir %>"
     #
     # uncomment to enable
     #[udf.functions.pyavg]
-    #    prog = "/usr/bin/python2"
-    #    args = ["-u", "./udf/agent/examples/moving_avg.py"]
-    #    timeout = "10s"
+    #   prog = "/usr/bin/python2"
+    #   args = ["-u", "./udf/agent/examples/moving_avg.py"]
+    #   timeout = "10s"
     #   [udf.functions.pyavg.env]
     #       PYTHONPATH = "./udf/agent/py"
+
+    # Example UDF over a socket
+    #[udf.functions.myCustomUDF]
+    #   socket = "/path/to/socket"
+    #   timeout = "10s"
 
 [talk]
   # Configure Talk.
