@@ -24,7 +24,7 @@ class kapacitor::package {
           /386/   => "kapacitor_${::kapacitor::version}_i386.deb",
           default => "kapacitor_${::kapacitor::version}_amd64.deb",
         }
-        $package_source = "https://s3.amazonaws.com/kapacitor/${package_source_name}"
+        $package_source = "https://dl.influxdata.com/kapacitor/releases/${package_source_name}"
         wget::fetch { 'kapacitor':
           source      => $package_source,
           destination => "/tmp/${package_source_name}"
@@ -38,10 +38,10 @@ class kapacitor::package {
       }
       'redhat': {
         $package_source_name = $::architecture ? {
-          /386/   => "kapacitor-${::kapacitor::version}-1.i686.rpm",
-          default => "kapacitor-${::kapacitor::version}-1.x86_64.rpm",
+          /386/   => "kapacitor-${::kapacitor::version}.i386.rpm",
+          default => "kapacitor-${::kapacitor::version}.x86_64.rpm",
         }
-        $package_source = "http://get.influxdb.org/kapacitor/${package_source_name}"
+        $package_source = "https://dl.influxdata.com/kapacitor/releases/${package_source_name}"
         exec {
           'kapacitor_rpm':
             command => "rpm -ivh ${package_source}",

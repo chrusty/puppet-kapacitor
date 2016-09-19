@@ -42,7 +42,7 @@ class kapacitor (
   $config_hipchat_state_changes_only = false,
   $ensure                            = 'installed',
   $install_from_repository           = false,
-  $version                           = '0.12.0-1',
+  $version                           = '0.13.1',
 ) {
 
   class { '::kapacitor::package': } ~>
