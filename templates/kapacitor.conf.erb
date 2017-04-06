@@ -12,7 +12,7 @@ data_dir = "<%= @config_data_dir %>"
   # Kapacitor calls.
   bind-address = "<%= @config_http_bind_address %>"
   auth-enabled = false
-  log-enabled = true
+  log-enabled = "<%= @config_http_log_enabled %>"
   write-tracing = false
   pprof-enabled = false
   https-enabled = false
@@ -335,3 +335,4 @@ data_dir = "<%= @config_data_dir %>"
   batch-size = 1000
   batch-pending = 5
   batch-timeout = "1s"
+

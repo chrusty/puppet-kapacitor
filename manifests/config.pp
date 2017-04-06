@@ -4,6 +4,7 @@ class kapacitor::config(
   $config_data_dir                   = $::kapacitor::config_data_dir,
   $config_hostname                   = $::kapacitor::config_hostname,
   $config_http_bind_address          = $::kapacitor::config_http_bind_address,
+  $config_http_log_enabled           = $::kapacitor::config_http_log_enabled,
   $config_influxdb_name              = $::kapacitor::config_influxdb_name,
   $config_influxdb_password          = $::kapacitor::config_influxdb_password,
   $config_influxdb_urls              = $::kapacitor::config_influxdb_urls,
