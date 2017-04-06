@@ -8,6 +8,7 @@ class kapacitor (
   $config_data_dir                   = '/var/lib/kapacitor',
   $config_hostname                   = 'localhost',
   $config_http_bind_address          = ':9092',
+  $config_http_log_enabled           = true,
   $config_influxdb_name              = 'localhost',
   $config_influxdb_password          = '',
   $config_influxdb_urls              = ['http://localhost:8086'],
