@@ -12,7 +12,7 @@ data_dir = "<%= @config_data_dir %>"
   # Kapacitor calls.
   bind-address = "<%= @config_http_bind_address %>"
   auth-enabled = false
-  log-enabled = "<%= @config_http_log_enabled %>"
+  log-enabled = <%= @config_http_log_enabled %>
   write-tracing = false
   pprof-enabled = false
   https-enabled = false
